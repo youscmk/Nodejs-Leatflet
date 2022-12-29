@@ -10,10 +10,9 @@ const server = http.createServer(app);
 const io =socketIO(server);
 
 //settings
+app.set('views', path.join(__dirname, 'views'));
 app.engine('ejs', engine);
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
-
 
 //routes
 app.use(require('./routes/'));

@@ -1,6 +1,6 @@
 module.exports = io => {
     io.on('connection', (socket) => {
-        console.log('New User connect');
+        console.log('New socket connect');
 
         socket.on('userCordinates', coords => {
             socket.broadcast.emit('newUserCoordinates', coords);
