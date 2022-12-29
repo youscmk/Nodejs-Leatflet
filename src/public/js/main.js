@@ -8,7 +8,7 @@ L.tileLayer(tileUrl).addTo(map);
 
 map.locate({enableHighAccuracy: true });
 map.on('locationfound', e => {
-    const coords=[e.latlng.lat+40, e.latlng.lng+40];
+    const coords=[e.latlng.lat+50, e.latlng.lng+50];
     const marker = L.marker(coords);
     marker.bindPopup('Helle There!!');
     map.addLayer(marker);
