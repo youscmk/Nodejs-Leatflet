@@ -17,6 +17,7 @@ app.set('view engine', 'ejs');
 //routes
 app.use(require('./routes/'));
 
+
 //sockets
 
 require('./sockets')(io);
